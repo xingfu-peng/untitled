@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="np2">2dp</dimen>
+    <dimen name="np4">4dp</dimen>
+    <dimen name="np8">8dp</dimen>
+    <dimen name="np9">9dp</dimen>
+    <dimen name="np10">10dp</dimen>
+    <dimen name="np11">11dp</dimen>
+    <dimen name="np12">12dp</dimen>
+    <dimen name="np13">13dp</dimen>
+    <dimen name="np14">14dp</dimen>
+    <dimen name="np15">15dp</dimen>
+    <dimen name="np16">16dp</dimen>
+    <dimen name="np19">19dp</dimen>
+    <dimen name="np24">24dp</dimen>
+    <dimen name="np26">26dp</dimen>
+    <dimen name="np29">29dp</dimen>
+    <dimen name="np31">31dp</dimen>
+    <dimen name="np32">32dp</dimen>
+    <dimen name="np113">113dp</dimen>
+</resources>

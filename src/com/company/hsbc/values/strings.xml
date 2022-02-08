@@ -1,0 +1,36 @@
+<resources>
+    <string name="asset_house_worth">房产价值(万元)</string>
+    <string name="asset_house_worth_value">53,070.00</string>
+    <string name="asset_imformation">资产信息</string>
+    <string name="asset_booking_time">记账时间</string>
+    <string name="asset_edit">编辑</string>
+    <string name="asset_time_car">2021-11-16</string>
+    <string name="asset_date">2020/12/18</string>
+    <string name="booking_date_car">12：12</string>
+    <string name="asset_loan_information">贷款信息</string>
+    <string name="asset_repay_method">贷款方式</string>
+    <string name="asset_loan_method_text">组合贷款</string>
+    <string name="asset_commercial_f">公积金贷款</string>
+    <string name="asset_commercial_b">商业贷款</string>
+    <string name="asset_repay_method_text">等额本金</string>
+    <string name="asset_loan_amount">贷款金额</string>
+    <string name="asset_loan_amount_value">66.00</string>
+    <string name="asset_loan_amount_text">万元</string>
+    <string name="asset_repat_date">还款日</string>
+    <string name="asset_repay_method_b">还款方式</string>
+    <string name="asset_repat_time">1日</string>
+    <string name="asset_remaining_period">剩余期数</string>
+    <string name="asset_remaining_period_value">60期</string>
+    <string name="asset_interest_rate">年利率</string>
+    <string name="asset_interest_rate_value">5.12%</string>
+    <string name="asset_remark">备注</string>
+    <string name="asset_remark_value">有房就是家</string>
+    <string name="asset_property_type">房产类型</string>
+    <string name="asset_property_type_value">自住</string>
+    <string name="asset_type_value">房产价值</string>
+    <string name="asset_booking_time">更新时间</string>
+    <string name="asset_confirm_status">待确认</string>
+    <string name="asset_transfer_out">转出</string>
+    <string name="asset_transfer_out_time">转出时间:</string>
+    <string name="asset_money_symbol">￥</string>
+</resources>
