@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white_F6F7FA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/mos_base_include_toolbar_common" />
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/text_color_505873"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/np113"
+                android:background="@drawable/account_color_505873_f6f7fa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cl_account" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/np16"
+                android:background="@drawable/account_rect_white_rc12_borad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_total_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/account_rect_fff7d3_rc12"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/np12"
+                        android:text="金额已自动更新,更新日期2021-11-24"
+                        android:textColor="@color/text_color_5C587A"
+                        android:textSize="@dimen/np12"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_total_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np16"
+                        android:text="@string/asset_house_worth"
+                        android:textColor="@color/text_color_414056"
+                        android:textSize="@dimen/np12"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_note" />
+
+                    <TextView
+                        android:id="@+id/tv_total_money_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np8"
+                        android:layout_marginBottom="@dimen/np24"
+                        android:text="@string/asset_house_worth_value"
+                        android:textColor="@color/text_color_414056"
+                        android:textSize="@dimen/np31"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_total_money" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_asset_im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/np26"
+                android:layout_marginTop="@dimen/np26"
+                android:text="@string/asset_imformation"
+                android:textColor="@color/text_color_16142D"
+                android:textSize="@dimen/np19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_account" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/np29"
+                android:layout_marginRight="@dimen/np4"
+                app:layout_constraintEnd_toStartOf="@+id/tv_edit"
+                app:layout_constraintTop_toBottomOf="@+id/cl_account" />
+
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/np29"
+                android:layout_marginRight="@dimen/np32"
+                android:text="@string/asset_edit"
+                android:textColor="@color/text_color_5C587A"
+                android:textSize="@dimen/np14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_account" />
+
+            <LinearLayout
+                android:id="@+id/cl_tv_asset_fang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/np16"
+                android:layout_marginTop="@dimen/np16"
+                android:orientation="vertical"
+                android:background="@drawable/account_rect_white_rc8_borad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_asset_im">
+
+                
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_asset_car"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_booking_time_car_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/np16"
+                        android:layout_marginTop="@dimen/np16"
+                        android:text="@string/asset_booking_time"
+                        android:textColor="@color/text_color_414056"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_booking_time_car"
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np16"
+                        android:layout_marginRight="@dimen/np4"
+                        android:text="@string/asset_time_car"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_booking_date_car"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_booking_date_car"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np16"
+                        android:layout_marginRight="@dimen/np16"
+                        android:text="@string/booking_date_car"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view_asset_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/np2"
+                        android:layout_marginHorizontal="@dimen/np16"
+                        android:layout_marginTop="@dimen/np12"
+                        android:background="@drawable/account_view_dash_line"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_booking_time_car" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_loan_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_loan_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asset_loan_information"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np15"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_repay_method"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_repay_method"
+                        android:textColor="@color/text_color_414056"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_loan_information" />
+
+                    <TextView
+                        android:id="@+id/tv_repay_method_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_repay_method_text"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_loan_information" />
+
+                    <TextView
+                        android:id="@+id/tv_loan_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_loan_amount"
+                        android:textColor="@color/text_color_414056"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_repay_method" />
+
+
+                    <TextView
+                        android:id="@+id/tv_loan_amount_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_loan_amount_value"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintEnd_toStartOf="@+id/tv_loan_amount_text"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_repay_method" />
+
+                    <TextView
+                        android:id="@+id/tv_loan_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_loan_amount_text"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_repay_method" />
+
+                    <TextView
+                        android:id="@+id/tv_repat_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_repat_date"
+                        android:textColor="@color/text_color_414056"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_loan_amount" />
+
+                    <TextView
+                        android:id="@+id/tv_repat_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_repat_time"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_loan_amount_text" />
+
+                    <TextView
+                        android:id="@+id/tv_remaining_period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_remaining_period"
+                        android:textColor="@color/text_color_414056"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_repat_date" />
+
+                    <TextView
+                        android:id="@+id/tv_remaining_period_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_remaining_period_value"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_repat_time" />
+
+                    <TextView
+                        android:id="@+id/tv_interest_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_interest_rate"
+                        android:textColor="@color/text_color_414056"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_remaining_period" />
+
+                    <TextView
+                        android:id="@+id/tv_interest_rate_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/np12"
+                        android:text="@string/asset_interest_rate_value"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_remaining_period_value" />
+
+                    <View
+                        android:id="@+id/viewusiness_asset"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/np2"
+                        android:layout_marginTop="@dimen/np12"
+                        android:background="@drawable/account_view_dash_line"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_interest_rate" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_remark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/np12"
+                        android:layout_marginLeft="@dimen/np16"
+                        android:text="@string/asset_remark"
+                        android:textColor="@color/text_color_414056"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_remark_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/np16"
+                        android:text="@string/asset_remark_value"
+                        android:textColor="@color/text_color_16142D"
+                        android:textSize="@dimen/np13"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
